@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tarea_5/views/PortadaView.dart';
+import 'package:tarea_5/views/personajes-view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,17 +35,15 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int posicion = 0;
 
-  //  static var screens = [
-  //   const PortadaView(),
-  //   tabla_view(),
-  //   numeros_view()
-  // ];
+  static var pantallas = [
+    const PortadaView(),
+    personajes_view(),
+  ];
   static const List<Destination> allDestinations = <Destination>[
     Destination(0, 'Portada', Icons.portrait, Colors.red),
     Destination(1, 'Personajes', Icons.people, Colors.red),
     Destination(3, 'Momentos', Icons.local_movies, Colors.red),
     Destination(4, 'Acerca de', Icons.info, Colors.red),
-    // Destination(5, 'En mi vida ', Icons.donut_large_sharp, Colors.red),
     Destination(6, 'Contratame', Icons.contact_page, Colors.red),
   ];
 
@@ -59,11 +58,11 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text(
-            widget.title,
-          ),
         ),
-        body: PortadaView(),
+        body: IndexedStack(
+          index: posicion,
+          children: pantallas,
+        ),
         bottomNavigationBar: NavigationBar(
           backgroundColor: Colors.black,
           selectedIndex: posicion,

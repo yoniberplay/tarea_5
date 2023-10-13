@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tarea_5/views/PortadaView.dart';
+import 'package:tarea_5/views/momentos-view.dart';
 import 'package:tarea_5/views/personajes-view.dart';
 
 void main() {
@@ -38,13 +39,14 @@ class _MyHomePageState extends State<MyHomePage> {
   static var pantallas = [
     const PortadaView(),
     personajes_view(),
+    momentos_view(),
   ];
   static const List<Destination> allDestinations = <Destination>[
     Destination(0, 'Portada', Icons.portrait, Colors.red),
     Destination(1, 'Personajes', Icons.people, Colors.red),
-    Destination(3, 'Momentos', Icons.local_movies, Colors.red),
-    Destination(4, 'Acerca de', Icons.info, Colors.red),
-    Destination(6, 'Contratame', Icons.contact_page, Colors.red),
+    Destination(2, 'Momentos', Icons.local_movies, Colors.red),
+    Destination(3, 'Acerca de', Icons.info, Colors.red),
+    Destination(4, 'Contratame', Icons.contact_page, Colors.red),
   ];
 
   void mostrarPantalla(int index) {

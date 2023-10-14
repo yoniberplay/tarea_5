@@ -13,11 +13,16 @@ Su aplicación debe tener las siguientes opciones.
 
 ## Evidencias
  
-![image](https://github.com/yoniberplay/tarea_5/assets/36041729/3b6bc41d-d1f1-4f18-bcbc-73dccc430f43)
-![image](https://github.com/yoniberplay/tarea_5/assets/36041729/d0646469-ccb9-4dd4-9c8b-070e619eb2c7)
-![image](https://github.com/yoniberplay/tarea_5/assets/36041729/91258a3a-d269-43a0-849c-c6bf1c5f98e6)
-![image](https://github.com/yoniberplay/tarea_5/assets/36041729/d8719c0f-7551-4075-a5c3-cf6e6304f711)
-![image](https://github.com/yoniberplay/tarea_5/assets/36041729/2e2da48e-c6d2-4e83-afca-0ccacf11f56a)
-![image](https://github.com/yoniberplay/tarea_5/assets/36041729/9b50ad82-6da3-4fd1-af71-e635620927f8)
+![image](https://github.com/yoniberplay/tarea_5/assets/36041729/1071a3ab-42b9-4b72-ae22-d1f20d9ffb98)
+![image](https://github.com/yoniberplay/tarea_5/assets/36041729/5de2df73-e9a4-40ba-b3c1-1d32fbe2029b)
+![image](https://github.com/yoniberplay/tarea_5/assets/36041729/4d8c56c3-5d6e-425e-9dee-05240e3d86ca)
+![image](https://github.com/yoniberplay/tarea_5/assets/36041729/a704a4cf-be41-44f6-85e5-b7592fe7ff91)
+![image](https://github.com/yoniberplay/tarea_5/assets/36041729/642edfd9-3245-4136-a149-e09e264cc48b)
+![image](https://github.com/yoniberplay/tarea_5/assets/36041729/03d2828d-af29-4db2-9ad9-f0b724d01a3b)
+![image](https://github.com/yoniberplay/tarea_5/assets/36041729/cdf4e378-6c9b-4926-b5bb-57d21edd0118)
+
+
+
+
 
 

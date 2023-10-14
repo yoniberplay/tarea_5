@@ -26,7 +26,6 @@ class _momentos_view extends State<momentos_view> {
         detalle:
             'Reddington y las últimas imágenes lo muestran caminando en la naturaleza y encontrándose con un toro que lo ataca. Luego, en la pantalla vemos un helicóptero aterrizando en el campo y Donald Ressler (Diego Klattenhoff), que está a bordo, ve el cuerpo ensangrentado y sin vida de Reddington.',
         controller: VideoPlayerController.asset('assets/momento3.mp4')),
-    // Agrega más fotos con sus títulos y URL de video aquí
   ];
 
   @override
@@ -52,17 +51,15 @@ class _momentos_view extends State<momentos_view> {
                   SizedBox(height: 20),
                   Container(
                     decoration: const BoxDecoration(
-                      color: Colors.black, // Color de fondo
+                      color: Colors.black,
                       border: Border(
-                          bottom: BorderSide(
-                              color: Colors.red,
-                              width: 2.0)), // Borde rojo en la parte inferior
+                          bottom: BorderSide(color: Colors.red, width: 2.0)),
                     ),
                     child: Text(photos[index].title,
                         style: const TextStyle(
-                          fontSize: 18, // Tamaño de fuente grande
-                          color: Colors.white, // Color blanco
-                          fontWeight: FontWeight.bold, // Fuente en negrita
+                          fontSize: 18,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
                         )),
                   ),
                   SizedBox(height: 2),
@@ -85,9 +82,6 @@ class PhotoDetailScreen extends StatelessWidget {
   final PhotoInfo photo;
   late VideoPlayerController controller;
 
-  // _controller = VideoPlayerController.asset(
-  //     'assets/momento1.mp4',
-
   PhotoDetailScreen({super.key, required this.photo}) {
     controller = photo.controller;
     controller.initialize().then((_) {
@@ -103,9 +97,9 @@ class PhotoDetailScreen extends StatelessWidget {
         backgroundColor: Colors.black,
         title: Text(photo.title,
             style: const TextStyle(
-              fontSize: 20, // Tamaño de fuente grande
-              color: Colors.white, // Color blanco
-              fontWeight: FontWeight.bold, // Fuente en negrita
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
             )),
       ),
       body: WillPopScope(
@@ -113,7 +107,7 @@ class PhotoDetailScreen extends StatelessWidget {
             if (controller.value.isPlaying) {
               controller.pause();
             }
-            return true; // Permite la acción de retroceso.
+            return true;
           },
           child: Center(
             child: Container(
@@ -140,7 +134,6 @@ class PhotoDetailScreen extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       )),
-                  // Agregar el reproductor de video aquí utilizando el widget 'video_player'
                 ],
               ),
             ),

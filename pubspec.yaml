@@ -30,6 +30,8 @@ environment:
 dependencies:
   intl: ^0.18.1
   video_player: ^2.3.8
+  youtube_player_flutter: ^8.0.0
+
   flutter:
     sdk: flutter
 

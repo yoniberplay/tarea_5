@@ -6,8 +6,6 @@ class PortadaView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //final colors = Theme.of(context).colorScheme;
-
     return Container(
         color: Colors.black,
         child: Center(
@@ -19,12 +17,12 @@ class PortadaView extends StatelessWidget {
                 width: 400,
                 height: 400,
               ),
-              SizedBox(height: 20),
-              Text('The Blacklist',
+              const SizedBox(height: 20),
+              const Text('The Blacklist',
                   style: TextStyle(
-                    fontSize: 36, // Tamaño de fuente grande
-                    color: Colors.white, // Color blanco
-                    fontWeight: FontWeight.bold, // Fuente en negrita
+                    fontSize: 36,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
                   )),
             ],
           ),
